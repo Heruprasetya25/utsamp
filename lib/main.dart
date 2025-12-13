@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'login_page.dart';
-import 'dashboard_page.dart';
-import 'profile_page.dart';
-import 'saran_page.dart';
+import 'screens/login_page.dart';
+import 'screens/dashboard_page.dart';
+import 'screens/profile_page.dart';
+import 'screens/saran_page.dart';
+import 'screens/product_page.dart';
 
 void main() {
   runApp(const MplStyleApp());
@@ -18,7 +19,6 @@ class MplStyleApp extends StatelessWidget {
       title: 'Kaum Mendang Mending - MPL Style',
       debugShowCheckedModeBanner: false,
       theme: base.copyWith(
-        useMaterial3: true,
         scaffoldBackgroundColor: const Color(0xFF0B0F1A),
         colorScheme: base.colorScheme.copyWith(
           primary: const Color(0xFF7C3AED),
@@ -42,6 +42,7 @@ class MplStyleApp extends StatelessWidget {
         '/dashboard': (context) => const DashboardPage(),
         '/profile': (context) => const ProfilePage(),
         '/saran': (context) => const SaranPage(),
+        '/produk': (context) => const ProductPage(),
       },
     );
   }
